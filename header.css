@@ -1,5 +1,29 @@
-h1, h2, {
+#heading {
 	color: white;
-	background: black;
+	font-family: Georgia, serif;
+	font-size: 40;
+	font-style: italic;
+	background: #4997D0;
+
+	padding: 15px 25px 15px;
+	margin: -8px;
+	
+}
+#subheading {
+	color: white;
+	font-family: Georgia, serif;
+	background: #4997D0;
+	font-size: 20;
+	font-style: italic;
+	margin: -8px;
+	padding: 15px 50px 15px;
+}
+
+#subBoxes {
+	background:	#A9B2C3;
+	color: white;
+	margin: -8px;
+	padding: 8px 50px 8px;
+	font-size: 10;
 	
 }

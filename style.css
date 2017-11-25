@@ -1,5 +1,6 @@
 @import "header.css";
 @import "messages.css";
-@import "sendmessages.css";
+@import "sendmessage.css";
 
-* { font-family: "Arial Black" Gadget, sans-serif;}
+* { background: #F5F5F5;
+}

@@ -1,1 +1,12 @@
-
+#messageTitle {
+	padding: 5px 50px 5px;
+}
+#textbox {
+	border-top: 1.5px solid #93CCEA;
+	border-left: 1.5px solid #93CCEA;
+	border-right: 1.5px solid #93CCEA;
+	border-bottom: 1.5px solid #93CCEA;	
+	background-color: white;
+	padding: 20px 20px 20px 20px;
+	font-size: 20;
+}
