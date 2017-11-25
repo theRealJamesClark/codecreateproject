@@ -8,16 +8,18 @@
 		
     </head>
 	<body>
-
 		<form action ="app.js" method="post">
-			<h2 id="messageTitle"> What are you thinking? </h2>
-			<input id="textbox" type="text" name="message" size=50>
+			<h2 id="messageTitle"> /anything/ What are you thinking? </h2>
+			<textarea id="textbox" rows="3" cols="100"></textarea>
 			<input type="submit" value="Post" />
 		</form>
-		<h3 class="messages"> Previous Messages1 </h3>
-		<h3 class="messages"> Previous Messages2 </h3>
-		<h3 class="messages"> Previous Messages3 </h3>
-		<h3> Next/Previous Page Function <h4>		
+		<ol id="list">
+			<li class="messages"> Previous Messages1 </li>
+			<li class="messages"> Previous Messages2 </li>
+			<li class="messages"> Previous Messages3 </li>
+	
+		</ol>
+		<h4> Next/Previous Page Function <h4>
     </body>
 	
 </html>
