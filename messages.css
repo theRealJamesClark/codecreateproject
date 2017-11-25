@@ -2,10 +2,11 @@
 	border-top: 1.5px solid #93CCEA;
 	border-left: 1.5px solid #93CCEA;
 	border-right: 1.5px solid #93CCEA;
-	border-bottom: 1.5px solid #93CCEA;	
-	background-color: white;
+	border-bottom: 1.5px solid #93CCEA;
 	
+	background-color: white;
 	cursor: pointer;
+
 	
 	
 	padding-right: 10px;
@@ -18,10 +19,14 @@
 	margin-bottom: 10px;
 	
 	font-size: 15;
-	position: relative; left: 100px;
+	position: relative; left: 50px;
 }
-
-
+.top {
+	position:relative; left: 50px;
+}
+.new {
+	position:relative; left: 50px;
+}
 
 #list {
 		
