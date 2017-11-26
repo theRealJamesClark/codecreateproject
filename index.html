@@ -4,23 +4,23 @@
         <title> SoapBox </title>
 		<h1 id="heading"> SoapBox </h1>
 		<h2 id="subheading"> Complain about your miserable life to strangers </h2>
-		<h1 id="subBoxes"> <a class="topbar" href="index.html">Front</a> - Guidelines - How To | Chat - AskSoap - WorldNews - SubBoxes </h1>
-			
+		<h1 id="subBoxes"> <a class="topbar" href="index.html">Front</a> - <a class="topbar" href="guidelines.html"> Guidelines </a> - How To | Chat - AskSoap - WorldNews - SubBoxes </h1>
+		<script type="text/javascript" src="app.js"></script>
 		
     </head>
 	<body>
-		<form action ="app.js" method="post">
+		<form method="post">
 			<h2 id="messageTitle"> /anything/ What are you thinking? </h2>
-			<textarea id="textbox" rows="3" cols="100"></textarea>
-			<input type="submit" value="Post" />
+			<textarea id="postedMessage" class="textbox" rows="3" cols="100"></textarea>
+			<button type="button" id="post" onclick="postMessage()"> Post </button>
 		</form>
 		<ol id="list">
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button>
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button>
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button>
+			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
+			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
+			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
 	
 		</ol>
-		<h4> Next/Previous Page Function <h4>
+		<h4> Next/Previous Page <h4>
     </body>
 	
 </html>
