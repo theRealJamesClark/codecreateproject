@@ -9,18 +9,19 @@
 		
     </head>
 	<body>
+
 		<form method="post">
 			<h2 id="messageTitle"> /anything/ What are you thinking? </h2>
 			<textarea id="postedMessage" class="textbox" rows="3" cols="100"></textarea>
 			<button type="button" id="post" onclick="postMessage()"> Post </button>
 		</form>
-		<ol id="list">
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
-			<li class="messages"> Previous Messages1 </li> <button class="top"> Top </button> <button class="new"> New </button> <button class="Reply"> Reply </button>
-	
-		</ol>
-		<h4> Next/Previous Page <h4>
+		
+		<div >
+			<ol id="divNewMessages"> </ol>
+		</div >
+		<h4 id="pageChange"> Next/Previous Page <h4>
+
+
     </body>
 	
 </html>

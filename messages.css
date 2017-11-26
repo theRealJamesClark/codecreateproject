@@ -6,8 +6,6 @@
 	
 	background-color: white;
 	cursor: pointer;
-
-	
 	
 	padding-right: 10px;
 	padding-left: 10px;
@@ -34,5 +32,10 @@
 
 #list {
 		
+	
+}
+
+#pageChange {
+	position:absolute; top: 600px;
 	
 }
