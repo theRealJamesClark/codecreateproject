@@ -12,10 +12,9 @@
 
 		<form method="post">
 			<h2 id="messageTitle"> /anything/ What are you thinking? </h2>
-			<textarea id="postedMessage" class="textbox" rows="3" cols="100"></textarea>
+			<textarea id="postedMessage" maxlength="180" class="textbox" rows="3" cols="100"></textarea>
 			<button type="button" id="post" onclick="postMessage()"> Post </button>
 		</form>
-		
 		<div >
 			<ol id="divNewMessages"> </ol>
 		</div >

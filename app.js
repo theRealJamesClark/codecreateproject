@@ -10,12 +10,15 @@ function postMessage() {
 
 // 2. Create new post with previous value
 function createMessage () {
-	var para = document.createElement("p");
+	var listItem = document.createElement("li");
 	var node = document.createTextNode(document.getElementById("postedMessage").value);
-	para.appendChild(node);
+	listItem	.appendChild(node);
 
 	var element = document.getElementById("divNewMessages");
-	element.appendChild(para);
+	element.appendChild(listItem);
+	
+	listItem.classList.add('Messages');
+	
 	size++;
 }
 
