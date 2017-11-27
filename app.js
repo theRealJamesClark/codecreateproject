@@ -5,6 +5,7 @@ function postMessage() {
 	if (size < 8) {
 		createMessage();
 	}
+	document.getElementById("form").reset();
 	
 }
 
@@ -12,7 +13,7 @@ function postMessage() {
 function createMessage () {
 	var listItem = document.createElement("li");
 	var node = document.createTextNode(document.getElementById("postedMessage").value);
-	listItem	.appendChild(node);
+	listItem.appendChild(node);
 
 	var element = document.getElementById("divNewMessages");
 	element.appendChild(listItem);
@@ -23,5 +24,5 @@ function createMessage () {
 }
 
 
-
+// 3. Like/Echo Function
 

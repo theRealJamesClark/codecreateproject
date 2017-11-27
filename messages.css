@@ -7,10 +7,10 @@
 	background-color: white;
 	cursor: pointer;
 	
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	
 	margin-right: 500px;
 	margin-top: 10px;
@@ -37,6 +37,6 @@
 }
 
 #pageChange {
-	position:absolute; top: 600px;
+	position:absolute; top: 700px;
 	
 }

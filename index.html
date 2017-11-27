@@ -4,13 +4,12 @@
         <title> SoapBox </title>
 		<h1 id="heading"> SoapBox </h1>
 		<h2 id="subheading"> Complain about your miserable life to strangers </h2>
-		<h1 id="subBoxes"> <a class="topbar" href="index.html">Front</a> - <a class="topbar" href="guidelines.html"> Guidelines </a> - How To | Chat - AskSoap - WorldNews - SubBoxes </h1>
-		<script type="text/javascript" src="app.js"></script>
+		<h1 id="subBoxes"> <a class="topbar" href="index.html">Front</a> - <a class="topbar" href="guidelines.html"> Guidelines </a> - How To | Chat - AskSoap - WorldNews - SubBoxes </h1>	
 		
     </head>
 	<body>
 
-		<form method="post">
+		<form method="post" id="form">
 			<h2 id="messageTitle"> /anything/ What are you thinking? </h2>
 			<textarea id="postedMessage" maxlength="180" class="textbox" rows="3" cols="100"></textarea>
 			<button type="button" id="post" onclick="postMessage()"> Post </button>
@@ -24,3 +23,17 @@
     </body>
 	
 </html>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script type="text/javascript" src="app.js">
+  // Initialize Firebase
+  
+  var config = {
+    apiKey: "AIzaSyCe1YwsCI-nOpxZPxNzidiYm0jR9nihJJk",
+    authDomain: "codecreateproject-5fcf2.firebaseapp.com",
+    databaseURL: "https://codecreateproject-5fcf2.firebaseio.com",
+    projectId: "codecreateproject-5fcf2",
+    storageBucket: "",
+    messagingSenderId: "575465393915"
+  };
+  firebase.initializeApp(config);
+</script>

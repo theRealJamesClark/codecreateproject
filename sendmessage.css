@@ -18,13 +18,12 @@
 	height: 75px;
 }
 #post {
-	width: 80px;
-	font-size: 17;
-	border-color: black;
+	width:120px;
+	font-size: 17px;
+	border-color: white;
 	color: white;
 	height: 80px;
 	background: #93CCEA;
-	border-radius: 50px;
 	position:relative; left:55px;
 	position:relative; top: -24px;
 
