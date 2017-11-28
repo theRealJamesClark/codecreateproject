@@ -1,22 +1,18 @@
 
-var fireHeading = document.getElementById("fireHeading");
-var firebaseHeadingRef = firebase.database().ref().child("Heading");
-firebaseHeadingRef.on('value', function(data) {
-	fireHeading.innerText = data.val();
-}
+var nextItem;
 
 // Page Loadup
 function pageLoadUp() {
-	// ??
-	let reference = 0;
-	while (reference < size) {
-		loadItem(reference);
-		reference++;
-	}
+	
+	var messageDb = firebase.database();
+	var messageRef = messageDb.ref("Messages");
+	messageRef.on("child_added", function(snapshot, prevChildKey) {
+		nextItem = snapshot.val();
+		createMessage();
+		console.log(snapshot);
+	});
 }
 
-function loadItem(reference) {
-}
 
 // New Message Functions
 var size = 0;
@@ -25,7 +21,6 @@ var newMessage;
 function postMessage() {
 	newMessage = document.getElementById("postedMessage").value;
 	console.log(newMessage);
-	//createMessage();
 	storeMessage();
 	
 	document.getElementById("form").reset();
@@ -33,15 +28,15 @@ function postMessage() {
 
 // 2. Store in database
 function storeMessage() {
-	var firebaseRef = firebase.database().ref();
+	var firebaseRef = firebase.database().ref("Messages");
 	firebaseRef.push().set(newMessage);
 }
-/*
-// 2. Create new post with previous value
+
+// 3. Create new post with previous value
 function createMessage () {
 
 	var listItem = document.createElement("li");
-	var node = document.createTextNode(document.getElementById("postedMessage").value);
+	var node = document.createTextNode(nextItem);
 	listItem.appendChild(node);
 
 	var element = document.getElementById("divNewMessages");
@@ -54,5 +49,3 @@ function createMessage () {
 	
 
 }
-
-*/
