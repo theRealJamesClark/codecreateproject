@@ -40,7 +40,8 @@ function createMessage () {
 	listItem.appendChild(node);
 
 	var element = document.getElementById("divNewMessages");
-	element.appendChild(listItem);
+	var child = document.getElementById("endMessage");
+	element.insertBefore(listItem, child);
 	
 	listItem.classList.add('Messages');
 	
